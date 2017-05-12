@@ -1,0 +1,53 @@
+ <div class="header">
+	<div class="container">
+		<div class="header_left" data-wow-duration="2s" data-wow-delay="0.5s">
+			<ul>
+				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+123 456 7890</li>
+				<li><a href="mailto:info@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@example.com</a></li>
+			</ul>
+		</div>
+		<div class="header_right">
+			<div class="login">
+				<ul>
+
+					<li>
+						<div class="search-bar">
+							<div class="search">		
+								<a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+							</div>
+								<div id="small-dialog" class="mfp-hide">
+									<div class="search-top">
+										<div class="login_pop">
+											<form action="#" method="post">
+												<input type="submit" value="">
+												<input type="text" name="Type something..." value="Type something...">
+											</form>
+										</div>				
+									</div>
+									<script>
+												$(document).ready(function() {
+												$('.popup-with-zoom-anim').magnificPopup({
+													type: 'inline',
+													fixedContentPos: false,
+													fixedBgPos: true,
+													overflowY: 'auto',
+													closeBtnInside: true,
+													preloader: false,
+													midClick: true,
+													removalDelay: 300,
+													mainClass: 'my-mfp-zoom-in'
+												});
+
+												});
+									</script>				
+								</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+  </div>
+  <menu data-ng-include="'app/views/menu.html'"></menu>

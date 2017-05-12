@@ -1,0 +1,9 @@
+{
+    "database": {
+        "password": "khali123",
+        "dialect": "mysql",
+        "name": "geppetto",
+        "host": "gepdev.cbwybhmfeybv.us-east-1.rds.amazonaws.com",
+        "username": "khali"
+    }
+}

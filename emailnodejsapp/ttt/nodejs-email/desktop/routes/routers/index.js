@@ -1,0 +1,1 @@
+exports.TestActivitiesRouter = require("./TestActivitiesRouter");

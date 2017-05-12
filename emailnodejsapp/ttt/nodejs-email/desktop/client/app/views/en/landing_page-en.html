@@ -1,0 +1,79 @@
+<header data-ng-include="'app/views/header.html'"></header>
+<div class="banner">
+				<script>
+
+						$(function () {
+						$("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+						$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+							}
+							});
+						});
+				</script>
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner1">
+						<div class="container">
+							<div class="banner-info">
+								<h3>Providing Appropriate Spant</h3>
+								<p style="color:#fff;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+								dolore magnam aliquam quaerat voluptatem.</p>
+								<a href="#" class="hvr-outline-out button2 scroll">Read More</a>
+							</div>
+						</div>
+					</div>
+				</li> 
+				<li>
+					<div class="banner2">
+						<div class="container">
+							<div class="banner-info2 text-center">
+								<h3>Providing Appropriate Spant</h3>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+								dolore magnam aliquam quaerat voluptatem.</p>
+								<a href="#" class="hvr-outline-out button2 scroll">Read More</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="banner1">
+						<div class="container">
+							<div class="banner-info">
+								<h3>Providing Appropriate Spant</h3>
+								<p style="color:#fff;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+								dolore magnam aliquam quaerat voluptatem.</p>
+								<a href="#" class="hvr-outline-out button2 scroll">Read More</a>
+							</div>
+						</div>
+					</div>
+				</li> 
+				<li>
+					<div class="banner2">
+						<div class="container">
+							<div class="banner-info2 text-center">
+								<h3>Providing<span> Appropriate Spant </span></h3>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+								dolore magnam aliquam quaerat voluptatem.</p>
+								<a href="#" class="hvr-outline-out button2 scroll">Read More</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+</div>
+<div class="content">
+	<div class="container" style="padding:50px;">
+	</div>	
+</div>
+ <footer  data-ng-include="'app/views/footer.html'"></footer>

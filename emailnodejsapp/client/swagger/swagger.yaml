@@ -1,0 +1,41 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: NodeDebugProj
+host: localhost/:9090
+basePath: /NodeDebugProj_42
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /TestActivities/TestNoun:
+    post:
+      description: Create TestNoun
+      parameters:
+        - name: testnoun
+          in: body
+          description: json object
+          required: true
+          type: string
+          schema:
+            $ref: '#/definitions/TestNoun'
+      responses:
+        "201":
+          description: Success
+
+definitions:
+  TestNoun:
+    required:
+      - persona
+      - personb
+
+    properties:
+      id:
+        type: integer
+      persona:
+        type: string
+      personb:
+        type: string
